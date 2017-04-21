@@ -1,0 +1,50 @@
+.flex {
+    &__container {
+        display: inline;
+
+        @mixin atSmall {
+           display: flex;
+        }
+        
+        
+        &--column {
+
+            @mixin atSmall {
+                flex-direction: column;
+            }
+        }
+
+        &--center {
+
+            @mixin atSmall {
+                justify-content: center;
+            }
+        }
+
+        &--wrap {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+
+        @mixin atSmall {
+            flex: 1;
+        }
+        
+        &--center {
+
+            @mixin atSmall {
+                align-self: center;
+            }
+        }
+
+        &--no-grow {
+
+            @mixin atSmall {
+                flex: 0;
+            }
+            
+        }
+    }
+}

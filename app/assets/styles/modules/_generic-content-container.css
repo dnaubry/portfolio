@@ -1,0 +1,13 @@
+.generic-content-container {
+    font-family: 'Karla', serif;
+    font-size: 1.1rem;
+    padding: 0 .5rem;
+
+    a {
+       color: $darkBlue;
+
+       &:hover {
+           color: $lightBlue;
+       } 
+    }
+}

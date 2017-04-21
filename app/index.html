@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Danielle Aubry</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Sacramento|Karla|Kristi|Lora|Josefin+Slab|Open+Sans+Condensed:700" rel="stylesheet">
+    <link href="temp/styles/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+  <header class="site-header">
+    <div class="site-header__titles">
+      <h1 class="site-header__title">Danielle Aubry</h1>
+      <h2 class="site-header__sub-title">Web Developer</h2>
+    </div>
+    <nav class="navbar">
+    <ul>
+      <li><a href="#projects" id="projects-link">projects</a></li>
+      <li><a href="#about" id="about-link">about</a></li>
+      <li><a href="#contact" id="contact-link">contact</a></li>
+    </ul>
+  </nav>
+  </header>
+  
+  
+
+  <div class="wrapper">       
+    <div id="projects" class="page-section" data-matching-link="#projects-link">
+      <h2 class="section-title section-title--padding-top">Projects</h2>
+        <div class="flex__container flex__container flex__container--center flex__container--wrap">
+          <div class="project flex__item flex__container--column">
+            <div class="project__image flex__item">
+              <picture>
+                <source srcset="assets/images/wdr-screenshot-small.jpg" media="(min-width: 530px")>
+                <img srcset="assets/images/wdr-screenshot-smallest.jpg 250w" src="assets/images/wdr-screenshot-small.jpg" alt="Wordpress Website Screenshot">
+              </picture>
+            </div>
+            <div class="project__details flex__item generic-content-container">
+              <p><span>WebDev Resources</span></p>
+              <p><span>Skills and Tools:</span> Wordpress, HTML, CSS, jQuery, PHP, Gulp, Sass, webpack</p>
+              <p> 
+                <a href="http://webdevresources.danielleaubry.com" target="_blank">View</a> // <a href="https://github.com/dnaubry/blocks" target="_blank">GitHub</a></p>
+            </div>   
+          </div>
+          <div class="project flex__item flex__container--column">
+            <div class="project__image flex__item">
+              <picture>
+                <source srcset="assets/images/quiz-screenshot-small.jpg" media="(min-width: 530px")>
+                <img srcset="assets/images/quiz-screenshot-smallest.jpg 250w" src="assets/images/quiz-screenshot-small.jpg" alt="Quiz App Screenshot">
+              </picture>
+            </div>
+            <div class="project__details flex__item flex__item--center generic-content-container">
+              <p><span>Quiz Web App</span></p>
+              <p><span>Skills and Tools:</span> HTML, CSS, JavaScript, Gulp, PostCSS, webpack</p>
+              <p>
+                <a href="#">View</a> // <a href="https://github.com/dnaubry/quiz" target="_blank">GitHub</a></p>
+            </div>   
+        </div>
+      </div>
+    </div>
+    <div id="about" class="page-section" data-matching-link="#about-link">
+      <h2 class="section-title">About</h2>
+        <div class="about about--left-column">
+          <p class="generic-content-container">Hello! I'm Danielle.</p>
+
+          <p class="generic-content-container">
+            I am a web developer currently focusing on front-end web technologies, including HTML5, CSS3, and JavaScript. I enjoy leveraging these technologies to build responsive websites and web apps. 
+          </p>
+        </div>
+        <div class="about about--right-column">
+          <p class="generic-content-container">Find me on:</p>
+          <p class="generic-content-container"><a href="https://github.com/dnaubry" target="_blank">GitHub</a></p>
+        </div>
+    </div>
+    <div id="contact" class="page-section" data-matching-link="#contact-link">
+      <h3 class="section-title">Contact</h3>
+      <p class="generic-content-container">Want to get in touch? Send me an email at <a href="mailto:hello@danielleaubry.com">hello@danielleaubry.com</a> or use the form below.</p>
+      <div class="contact__form">
+        <form class="content__form" action="https://formspree.io/hello@danielleaubry.com"
+        method="POST">
+            <div class="contact__form--left">
+              <input type="text" name="name" id="input-name" placeholder="Name">
+              <input type="email" name="_replyto" id="input-email" placeholder="Email address">
+              <input type="text" name="_subject" id="input-subject" placeholder="Subject">
+            </div>
+            <div class="contact__form--right">
+              <textarea name="message" text="text" id="input-message" placeholder="Message"></textarea>
+            </div>
+          <input type="submit" value="Send" id="input-submit">
+        </form>
+      </div>
+  </div>
+  </div>
+  <script src="temp/scripts/App.js"></script>
+  </body>
+</html>

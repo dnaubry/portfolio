@@ -1,0 +1,36 @@
+.project {
+    background-color: #fff;
+    margin-bottom: 1rem;
+    padding-bottom: .3rem;
+    width: 100%;
+    
+
+    @mixin atSmall {
+        margin-right: 1rem;
+        box-shadow: 1px 1px $mediumGray;
+        width: 420px;
+    }
+
+    img {
+
+        @mixin atSmall {
+            margin: 10px;
+        }
+    }
+
+    &__details {
+        span {
+            font-weight: 700;
+            padding-right: .5rem;
+        }
+
+    
+        p {
+            padding: 0 .5rem;
+
+            &:last-of-type {
+                text-align: center;
+            }
+        }
+    }
+}

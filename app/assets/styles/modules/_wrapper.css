@@ -1,0 +1,16 @@
+.wrapper {
+    margin: 0 auto;
+
+    @mixin atSmall {
+        width: 95%;
+    }
+
+    @mixin atLarge {
+        width: 90%;
+    }
+
+    @mixin atExtraLarge {
+        width: 70%;
+    }
+    
+}

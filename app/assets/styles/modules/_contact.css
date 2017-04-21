@@ -1,0 +1,55 @@
+.contact {
+
+    &__form {
+        margin: 0 auto;
+        width: 320px;
+        text-align: center;
+
+        @mixin atMedium {
+            width: 700px;
+        }
+
+        &--left {
+
+            @mixin atMedium {
+                width: 50%;
+                float: left;
+            }
+        }
+
+        &--right {
+
+            @mixin atMedium {
+                width: 50%;
+                float: left;
+            }
+        }
+
+        input, textarea {
+            font-family: 'Karla', serif;
+            padding: .5rem;
+            margin: .5rem;
+            width: 280px;
+            /*border: 1px solid $lightBlue;*/
+            border: none;
+            box-shadow: 1px 1px $mediumGray;
+            @mixin atMedium {
+                width: 300px;
+            }
+        }
+
+        textarea {
+            height: 120px;
+        }
+
+        input[type="submit"] {
+            background-color: $darkBlue;
+            color: #fff;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: $lightBlue;
+            }
+        }
+    }
+}

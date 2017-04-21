@@ -1,0 +1,27 @@
+.about {   
+    @mixin clearfix;
+
+    margin: 0;
+
+    &--left-column {
+
+        @mixin atMedium {
+            float: left;
+            width: 75%;
+        }
+    
+    }
+
+    &--right-column {
+
+        @mixin atMedium {
+            float: left;
+            width: 25%;
+            padding: .5rem;
+            background-color: #fff;
+            box-sizing: border-box;
+            box-shadow: 1px 1px $mediumGray;
+        }
+
+    }
+}

@@ -1,0 +1,56 @@
+.navbar {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    text-align: center;
+    background-color: $lightGray;
+    padding: .2rem 0 .5rem;
+
+    @mixin atSmall {
+        padding: .5rem 0 1rem;
+    }
+
+    &--scrolled {
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        top: 0;
+    }
+   
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        padding: .1rem 1.4rem .1rem;
+        color: $darkBlue;
+        transition: all 0.3s ease;
+
+        @mixin atSmall {
+            font-size: 1.1rem;
+            padding: .1rem 2.5rem .1rem;
+        }
+
+        &:hover {
+            color: $lightBlue;
+        }
+
+    }
+
+    &__title {
+
+        &--is-visible {
+
+            @mixin atSmall {
+                display: none;
+            }
+        }
+    }
+}

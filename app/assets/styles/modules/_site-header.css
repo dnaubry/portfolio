@@ -1,0 +1,26 @@
+.site-header {
+
+    &__title {
+        color: $lightPurple;
+        font-family: 'black_jackregular', script;
+        font-size: 3rem;
+        font-weight: 400;
+        text-align: center;
+        margin: 0;
+        padding-top: 3rem;
+    }
+
+    &__sub-title {
+        text-align: center;
+        font-family: 'Karla', sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 50px;
+        margin-top: -5px;
+
+        @mixin atSmall {
+            position: relative;
+            left: 50px;
+        }
+    }
+}

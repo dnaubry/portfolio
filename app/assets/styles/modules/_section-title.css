@@ -1,0 +1,21 @@
+.section-title {
+    font-family: 'Lora', serif;
+    font-size: 1.4rem;
+    padding: .5rem .3rem .5rem;
+    margin: 0 0 1rem;
+    text-transform: lowercase;
+    border-bottom: 1px solid $lightBlue;
+
+    @mixin atSmall {
+          padding: 2rem 0 1rem;
+          font-size: 1.5rem;
+    }
+
+    &--padding-top {
+        padding-top: 1.5rem;
+
+        @mixin atSmall {
+            padding-top: 2.5rem;
+        } 
+    }
+}
