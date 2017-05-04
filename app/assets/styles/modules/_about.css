@@ -5,23 +5,9 @@
 
     &--left-column {
 
-        @mixin atMedium {
-            float: left;
-            width: 75%;
+        @mixin atLarge {
+            width: 90%;
         }
     
-    }
-
-    &--right-column {
-
-        @mixin atMedium {
-            float: left;
-            width: 25%;
-            padding: .5rem;
-            background-color: #fff;
-            box-sizing: border-box;
-            box-shadow: 1px 1px $mediumGray;
-        }
-
     }
 }

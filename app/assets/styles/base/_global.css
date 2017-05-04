@@ -1,6 +1,7 @@
 html, body {
     background-color: $lightGray;
-    box-sizing: border-box;
+    color: $darkGreen;
+    font-family: $mainFontFamily;
     margin: 0;
     padding: 0;
 }

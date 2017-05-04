@@ -30,6 +30,7 @@
     "postcss-mixins": "^5.4.1",
     "postcss-nested": "^1.0.0",
     "postcss-simple-vars": "^3.0.0",
+    "slick-carousel": "^1.6.0",
     "webpack": "^2.2.1"
   }
 }

@@ -26,29 +26,28 @@
         }
 
         input, textarea {
-            font-family: 'Karla', serif;
+            font-family: $mainFontFamily;
+            font-size: 1.1rem;
             padding: .5rem;
             margin: .5rem;
             width: 280px;
-            /*border: 1px solid $lightBlue;*/
-            border: none;
-            box-shadow: 1px 1px $mediumGray;
+            border: 1px solid $lightGreen;
             @mixin atMedium {
                 width: 300px;
             }
         }
 
         textarea {
-            height: 120px;
+            height: 128px;
         }
 
         input[type="submit"] {
-            background-color: $darkBlue;
+            background-color: $darkGreen;
             color: #fff;
             transition: all 0.3s ease;
 
             &:hover {
-                background-color: $lightBlue;
+                background-color: $pink;
             }
         }
     }

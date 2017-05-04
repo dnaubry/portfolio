@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Gentium+Basic|Alfa+Slab+One');
 @import "normalize.css";
-@import "base/_webfont";
+@import "slick-carousel/slick/slick";
+@import "slick-carousel/slick/slick-theme";
 @import "base/_variables";
 @import "base/_mixins";
 @import "base/_global";
 @import "modules/_site-header";
+@import "modules/_site-footer";
 @import "modules/_navbar";
 @import "modules/_section-title";
 @import "modules/_page-section";

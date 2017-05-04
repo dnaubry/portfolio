@@ -1,3 +1,10 @@
 .page-section {
-    @mixin clearfix;
+
+    &--columns {
+
+        @mixin atXXLarge {
+            width: 50%;
+            float: left;
+        }
+    }
 }

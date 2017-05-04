@@ -1,4 +1,6 @@
 .wrapper {
+    @mixin clearfix;
+    
     margin: 0 auto;
 
     @mixin atSmall {
@@ -9,8 +11,11 @@
         width: 90%;
     }
 
-    @mixin atExtraLarge {
-        width: 70%;
+    @mixin atXLarge {
+        width: 80%;
     }
-    
+
+    @mixin atXXLarge {
+        width: 85%;
+    }
 }

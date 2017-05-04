@@ -1,4 +1,9 @@
 import $ from 'jquery';
+import 'slick-carousel';
 import stickyNav from './modules/StickyNav';
 
-stickyNav();
+$( document ).ready(function() {
+    
+    stickyNav();
+    
+});

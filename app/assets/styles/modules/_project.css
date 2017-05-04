@@ -1,35 +1,39 @@
 .project {
-    background-color: #fff;
-    margin-bottom: 1rem;
-    padding-bottom: .3rem;
-    width: 100%;
-    
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 
     @mixin atSmall {
-        margin-right: 1rem;
-        box-shadow: 1px 1px $mediumGray;
-        width: 420px;
+        border-bottom: 1px solid $lightGreen;
+        padding-bottom: 3rem;
+        padding-top: 3rem;  
+    }
+
+    &:first-of-type {
+        padding-top: 1rem;
+    }
+
+    &:last-of-type {
+        border-bottom: none;
     }
 
     img {
+        width: 100%;
 
         @mixin atSmall {
-            margin: 10px;
+            border: 5px solid #fff;
+            width: 450px;
+        }
+
+        @mixin atXXLarge {
+            width: 600px;
         }
     }
 
     &__details {
-        span {
-            font-weight: 700;
-            padding-right: .5rem;
-        }
-
-    
         p {
-            padding: 0 .5rem;
-
             &:last-of-type {
                 text-align: center;
+                padding-top: .5rem;
             }
         }
     }

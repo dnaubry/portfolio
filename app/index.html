@@ -4,7 +4,6 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Danielle Aubry</title>
-    <link href="https://fonts.googleapis.com/css?family=Oswald|Sacramento|Karla|Kristi|Lora|Josefin+Slab|Open+Sans+Condensed:700" rel="stylesheet">
     <link href="temp/styles/styles.css" rel="stylesheet">
   </head>
 
@@ -17,65 +16,77 @@
     <nav class="navbar">
     <ul>
       <li><a href="#projects" id="projects-link">projects</a></li>
+      <li>+</li>
       <li><a href="#about" id="about-link">about</a></li>
+      <li>+</li>
       <li><a href="#contact" id="contact-link">contact</a></li>
     </ul>
   </nav>
   </header>
-  
-  
-
   <div class="wrapper">       
     <div id="projects" class="page-section" data-matching-link="#projects-link">
       <h2 class="section-title section-title--padding-top">Projects</h2>
-        <div class="flex__container flex__container flex__container--center flex__container--wrap">
-          <div class="project flex__item flex__container--column">
+      <!--flex__container flex__container flex__container--center flex__container--wrap-->
+        <div>
+          <div class="project flex__container">
             <div class="project__image flex__item">
-              <picture>
-                <source srcset="assets/images/wdr-screenshot-small.jpg" media="(min-width: 530px")>
-                <img srcset="assets/images/wdr-screenshot-smallest.jpg 250w" src="assets/images/wdr-screenshot-small.jpg" alt="Wordpress Website Screenshot">
-              </picture>
+                <img src="assets/images/wdr-smallest.jpg 250w" srcset="assets/images/wdr-small.jpg 400w, assets/images/wdr-medium.jpg 800w" alt="Wordpress Website Screenshot">
             </div>
             <div class="project__details flex__item generic-content-container">
-              <p><span>WebDev Resources</span></p>
-              <p><span>Skills and Tools:</span> Wordpress, HTML, CSS, jQuery, PHP, Gulp, Sass, webpack</p>
+              <p><span class="generic-content-container--heading">WebDev Resources</span>
+              <p>A website containing links to useful resources for web developers.</p>
+              <p>I wanted to organize the collection of links to websites and books that I found most helpful in improving my web development skills. 
+                The ideal solution would make it easy for me to find what I was looking for when I wanted to refer back to one of the resources and would also let me share the collection. 
+                Using a CMS would allow me to easily manage the collection of links and would give me experience working with a CMS. 
+                I chose to build the website using WordPress, mostly because of its popularity.</p>
+              <p>I used Scotch Box (a preconfigured Vagrant Box) to develop the WordPress theme locally before uploading it to the live site. 
+                The "Blocks" theme displays each link in a block that resizes responsively thanks to CSS3's flexbox. I added search and sort functions to make links easier to find.</p>
+              <p><span class="generic-content-container--heading">Skills and Tools:</span><span class="generic-content-container--padding-left">WordPress, jQuery, HTML, CSS / Sass, PHP, Gulp, Vagrant</span></p>
               <p> 
                 <a href="http://webdevresources.danielleaubry.com" target="_blank">View</a> // <a href="https://github.com/dnaubry/blocks" target="_blank">GitHub</a></p>
             </div>   
           </div>
-          <div class="project flex__item flex__container--column">
-            <div class="project__image flex__item">
-              <picture>
-                <source srcset="assets/images/quiz-screenshot-small.jpg" media="(min-width: 530px")>
-                <img srcset="assets/images/quiz-screenshot-smallest.jpg 250w" src="assets/images/quiz-screenshot-small.jpg" alt="Quiz App Screenshot">
-              </picture>
+          <div class="project flex__container">
+            <div class="quiz__images project__image flex__item">
+                <img src="assets/images/quiz-smallest.jpg 250w" srcset="assets/images/quiz-small.jpg 400w, assets/images/quiz-medium.jpg 800w" alt="Quiz App Screenshot">
             </div>
-            <div class="project__details flex__item flex__item--center generic-content-container">
-              <p><span>Quiz Web App</span></p>
-              <p><span>Skills and Tools:</span> HTML, CSS, JavaScript, Gulp, PostCSS, webpack</p>
+            <div class="project__details flex__item generic-content-container">
+              <p><span class="generic-content-container--heading">Quizzed on TV</span> 
+              <p>A JavaScript quiz web application.</p>
+              <p>While trying to figure out what to build for my first JavaScript web application, I came across a suggestion that a quiz web app would be a good first project.</p>
+              <p>The basic objective was to create a quiz that would show one question at a time with multiple answer choices and, after all the questions were answered, the score would be displayed.</p>
+              <p>Once the basic quiz was functioning, I added additional features including validation, to make sure an answer is selected before the next question is displayed, 
+                a back button to allow returning to previous questions, while retaining the selected answers, and expanding the app to support multiple quizzes.</p>
+              <p><span class="generic-content-container--heading">Skills and Tools:</span><span class="generic-content-container--padding-left">JavaScript, HTML, CSS / PostCSS, Handlebars.js, Gulp, webpack</span></p>
               <p>
-                <a href="#">View</a> // <a href="https://github.com/dnaubry/quiz" target="_blank">GitHub</a></p>
+                <a href="http://quiz.danielleaubry.com" target="_blank">View</a> // <a href="https://github.com/dnaubry/quiz" target="_blank">GitHub</a></p>
             </div>   
         </div>
       </div>
     </div>
-    <div id="about" class="page-section" data-matching-link="#about-link">
+    <div id="about" class="page-section page-section--columns" data-matching-link="#about-link">
       <h2 class="section-title">About</h2>
-        <div class="about about--left-column">
-          <p class="generic-content-container">Hello! I'm Danielle.</p>
-
-          <p class="generic-content-container">
-            I am a web developer currently focusing on front-end web technologies, including HTML5, CSS3, and JavaScript. I enjoy leveraging these technologies to build responsive websites and web apps. 
+        <div class="about about--left-column generic-content-container">
+          <p>Hello, I'm Danielle.</p>
+          <p>
+            I'm a web developer living in Chicago, IL. My current focus is on front-end development. I enjoy using my skills with JavaScript, CSS3, and HTML5 to create responsive web designs and web applications that solve problems.
+          </p>
+          <p>
+            I love learning new technologies and look forward to improving my JavaScript knowledge by tackling JavaScript frameworks, React in particular, next. 
+          </p>
+          <p>
+            When I'm not at my computer, I can be found enjoying a tasty beer with my boyfriend, playing tabletop games with friends, or entertaining my 18 pound beast of a cat, Milo.
           </p>
         </div>
-        <div class="about about--right-column">
-          <p class="generic-content-container">Find me on:</p>
-          <p class="generic-content-container"><a href="https://github.com/dnaubry" target="_blank">GitHub</a></p>
+        <div class="about about--right-column generic-content-container">
+          <p><span class="generic-content-container--heading">Find me on:</span>
+          <span class="generic-content-container--padding-left"><a href="https://github.com/dnaubry" target="_blank">GitHub</a> //
+          <a href="https://www.linkedin.com/in/danielleaubry" target="_blank">LinkedIn</a></span></p>
         </div>
     </div>
-    <div id="contact" class="page-section" data-matching-link="#contact-link">
+    <div id="contact" class="page-section page-section--columns" data-matching-link="#contact-link">
       <h3 class="section-title">Contact</h3>
-      <p class="generic-content-container">Want to get in touch? Send me an email at <a href="mailto:hello@danielleaubry.com">hello@danielleaubry.com</a> or use the form below.</p>
+      <p class="generic-content-container">Want to get in touch? Send me an email at <span class="generic-content-container--heading generic-content-container--pink">hello@danielleaubry.com</span> or use the form below.</p>
       <div class="contact__form">
         <form class="content__form" action="https://formspree.io/hello@danielleaubry.com"
         method="POST">
@@ -92,6 +103,9 @@
       </div>
   </div>
   </div>
+  <footer class="site-footer">
+    <div class="generic-content-container">&copy;2017 - Danielle Aubry</div>
+  </footer>
   <script src="temp/scripts/App.js"></script>
   </body>
 </html>

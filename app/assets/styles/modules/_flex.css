@@ -1,24 +1,8 @@
 .flex {
     &__container {
-        display: inline;
 
         @mixin atSmall {
            display: flex;
-        }
-        
-        
-        &--column {
-
-            @mixin atSmall {
-                flex-direction: column;
-            }
-        }
-
-        &--center {
-
-            @mixin atSmall {
-                justify-content: center;
-            }
         }
 
         &--wrap {
@@ -28,23 +12,18 @@
 
     &__item {
 
-        @mixin atSmall {
-            flex: 1;
-        }
-        
-        &--center {
+        &--1 {
 
             @mixin atSmall {
-                align-self: center;
+                flex: 0 0 600px;
             }
         }
-
+        
         &--no-grow {
 
             @mixin atSmall {
-                flex: 0;
-            }
-            
+                flex: 0 0 400px;
+            }   
         }
     }
 }
