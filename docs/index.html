@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Danielle Aubry | Web Developer</title>
+    <link rel="stylesheet" href="assets/styles/styles-fdf7dfeab7.css"/>
+  </head>
+
+  <body>
+  <header class="site-header">
+    <div class="site-header__titles">
+      <h1 class="site-header__title">Danielle Aubry</h1>
+      <h2 class="site-header__sub-title">Web Developer</h2>
+    </div>
+    <nav class="navbar">
+    <ul>
+      <li><a href="#projects" id="projects-link">projects</a></li>
+      <li>+</li>
+      <li><a href="#about" id="about-link">about</a></li>
+      <li>+</li>
+      <li><a href="#contact" id="contact-link">contact</a></li>
+    </ul>
+  </nav>
+  </header>
+  <div class="wrapper">       
+    <div id="projects" class="page-section" data-matching-link="#projects-link">
+      <h2 class="section-title section-title--padding-top">Projects</h2>
+      <!--flex__container flex__container flex__container--center flex__container--wrap-->
+        <div>
+          <div class="project flex__container">
+            <div class="project__image flex__item">
+                <img src="assets/images/wdr-small.jpg" srcset="assets/images/wdr-medium.jpg 800w" alt="Wordpress Website Screenshot">
+            </div>
+            <div class="project__details flex__item generic-content-container">
+              <p><span class="generic-content-container--heading">WebDev Resources</span>
+              <p>A website containing links to useful resources for web developers.</p>
+              <p>I wanted to organize the collection of links to websites and books that I found most helpful in improving my web development skills. 
+                The ideal solution would make it easy for me to find what I was looking for when I wanted to refer back to one of the resources and would also let me share the collection. 
+                Using a CMS would allow me to easily manage the collection of links and would give me experience working with a CMS. 
+                I chose to build the website using WordPress, mostly because of its popularity.</p>
+              <p>I used Scotch Box (a preconfigured Vagrant Box) to develop the WordPress theme locally before uploading it to the live site. 
+                The "Blocks" theme displays each link in a block that resizes responsively thanks to CSS3's flexbox. I added search and sort functions to make links easier to find.</p>
+              <p><span class="generic-content-container--heading">Skills and Tools:</span><span class="generic-content-container--padding-left">WordPress, jQuery, HTML, CSS / Sass, PHP, Gulp, Vagrant</span></p>
+              <p> 
+                <a href="http://webdevresources.danielleaubry.com" target="_blank">View</a> // <a href="https://github.com/dnaubry/blocks" target="_blank">GitHub</a></p>
+            </div>   
+          </div>
+          <div class="project flex__container">
+            <div class="quiz__images project__image flex__item">
+                <img src="assets/images/quiz-small.jpg" srcset="assets/images/quiz-medium.jpg 800w" alt="Quiz App Screenshot">
+            </div>
+            <div class="project__details flex__item generic-content-container">
+              <p><span class="generic-content-container--heading">Quizzed on TV</span> 
+              <p>A JavaScript quiz web application.</p>
+              <p>While trying to figure out what to build for my first JavaScript web application, I came across a suggestion that a quiz web app would be a good first project.</p>
+              <p>The basic objective was to create a quiz that would show one question at a time with multiple answer choices and, after all the questions were answered, the score would be displayed.</p>
+              <p>Once the basic quiz was functioning, I added additional features including validation, to make sure an answer is selected before the next question is displayed, 
+                a back button to allow returning to previous questions, while retaining the selected answers, and expanding the app to support multiple quizzes.</p>
+              <p><span class="generic-content-container--heading">Skills and Tools:</span><span class="generic-content-container--padding-left">JavaScript, HTML, CSS / PostCSS, Handlebars.js, Gulp, webpack</span></p>
+              <p>
+                <a href="http://quiz.danielleaubry.com" target="_blank">View</a> // <a href="https://github.com/dnaubry/quiz" target="_blank">GitHub</a></p>
+            </div>   
+        </div>
+      </div>
+    </div>
+    <div id="about" class="page-section page-section--columns" data-matching-link="#about-link">
+      <h2 class="section-title">About</h2>
+        <div class="about about--left-column generic-content-container">
+          <p>Hello, I'm Danielle.</p>
+          <p>
+            I'm a web developer living in Chicago, IL. My current focus is on front-end development. I enjoy using my skills with JavaScript, CSS3, and HTML5 to create responsive web designs and web applications that solve problems.
+          </p>
+          <p>
+            I love learning new technologies and look forward to improving my JavaScript knowledge by tackling JavaScript frameworks, React in particular, next. 
+          </p>
+          <p>
+            When I'm not at my computer, I can be found enjoying a tasty beer with my boyfriend, playing tabletop games with friends, or entertaining my 18 pound beast of a cat, Milo.
+          </p>
+        </div>
+        <div class="about about--right-column generic-content-container">
+          <p><span class="generic-content-container--heading">Find me on:</span>
+          <span class="generic-content-container--padding-left"><a href="https://github.com/dnaubry" target="_blank">GitHub</a> //
+          <a href="https://www.linkedin.com/in/danielleaubry" target="_blank">LinkedIn</a></span></p>
+        </div>
+    </div>
+    <div id="contact" class="page-section page-section--columns" data-matching-link="#contact-link">
+      <h3 class="section-title">Contact</h3>
+      <p class="generic-content-container">Want to get in touch? Send me an email at <span class="generic-content-container--heading generic-content-container--pink">hello@danielleaubry.com</span> or use the form below.</p>
+      <div class="contact__form">
+        <form class="content__form" action="https://formspree.io/hello@danielleaubry.com"
+        method="POST">
+            <div class="contact__form--left">
+              <input type="text" name="name" id="input-name" placeholder="Name">
+              <input type="email" name="_replyto" id="input-email" placeholder="Email address">
+              <input type="text" name="_subject" id="input-subject" placeholder="Subject">
+            </div>
+            <div class="contact__form--right">
+              <textarea name="message" text="text" id="input-message" placeholder="Message"></textarea>
+            </div>
+          <input type="submit" value="Send" id="input-submit">
+        </form>
+      </div>
+  </div>
+  </div>
+  <footer class="site-footer">
+    <div class="generic-content-container">&copy;2017 - Danielle Aubry</div>
+  </footer>
+  
+  <script src="assets/scripts/App-d04406e3c8.js"></script>
+  </body>
+</html>
