@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Gentium+Basic|Alfa+Slab+One');
 @import "normalize.css";
-@import "slick-carousel/slick/slick";
-@import "slick-carousel/slick/slick-theme";
 @import "base/_variables";
 @import "base/_mixins";
 @import "base/_global";
