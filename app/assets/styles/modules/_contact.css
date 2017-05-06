@@ -1,15 +1,17 @@
 .contact {
 
     &__form {
+        font-size: 1.2rem;
+        text-align: center;
         margin: 0 auto;
         width: 320px;
-        text-align: center;
 
         @mixin atMedium {
             width: 700px;
         }
 
         &--left {
+            text-align: left;
 
             @mixin atMedium {
                 width: 50%;
@@ -18,6 +20,7 @@
         }
 
         &--right {
+            text-align: left;
 
             @mixin atMedium {
                 width: 50%;
@@ -38,7 +41,7 @@
         }
 
         textarea {
-            height: 130px;
+            height: 170px;
         }
 
         input[type="submit"] {
@@ -47,7 +50,7 @@
             transition: all 0.3s ease;
 
             &:hover {
-                background-color: $pink;
+                background-color: $lightGreen;
             }
         }
     }

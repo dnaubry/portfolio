@@ -367,7 +367,7 @@ template {
 }
 html, body {
     background-color: #EFEEED;
-    color: #3D4A39;
+    color: #021C12;
     font-family: 'Gentium Basic', serif;
     margin: 0;
     padding: 0;
@@ -379,7 +379,7 @@ html, body {
   }
 }
 .site-header__title {
-  color: #E2B6AA;
+  color: #3c3562;
   font-family: 'Alfa Slab One', serif;
   font-size: 2.3rem;
   font-weight: 400;
@@ -412,7 +412,7 @@ html, body {
 }
 .site-footer {    
     background-color: #fff;
-    border-top: 1px solid #8F9F88;
+    border-top: 1px solid #99BCA6;
     margin-top: 2rem;
 }
 @media (min-width: 530px){
@@ -438,7 +438,7 @@ html, body {
 }
 .navbar--scrolled {
   background-color: #fff;
-  border-bottom: 1px solid #8F9F88;
+  border-bottom: 1px solid #99BCA6;
   position: fixed;
   z-index: 10;
   width: 100%;
@@ -453,7 +453,7 @@ html, body {
   list-style: none;
 }
 .navbar a {
-  color: #3D4A39;
+  color: #021C12;
   text-decoration: none;
   padding: .1rem 1.4rem .1rem;
   -webkit-transition: all 0.3s ease;
@@ -465,7 +465,7 @@ html, body {
   }
 }
 .navbar a:hover {
-  color: #E2B6AA;
+  color: #99BCA6;
 }
 @media (min-width: 530px){
   .navbar__title--is-visible{
@@ -473,7 +473,7 @@ html, body {
   }
 }
 .section-title {
-    color: #8F9F88;
+    color: #35623C;
     font-family: 'Alfa Slab One', serif;
     font-size: 1.4rem;
     font-weight: 400;
@@ -506,7 +506,7 @@ html, body {
 }
 @media (min-width: 530px){
   .project{
-    border-bottom: 1px solid #8F9F88;
+    border-bottom: 1px solid #99BCA6;
     padding-bottom: 2rem;
     padding-top: 3rem;
   }
@@ -605,20 +605,27 @@ html, body {
   }
 }
 .contact__form {
+  font-size: 1.2rem;
+  text-align: center;
   margin: 0 auto;
   width: 320px;
-  text-align: center;
 }
 @media (min-width: 800px){
   .contact__form{
     width: 700px;
   }
 }
+.contact__form--left {
+  text-align: left;
+}
 @media (min-width: 800px){
   .contact__form--left{
     width: 50%;
     float: left;
   }
+}
+.contact__form--right {
+  text-align: left;
 }
 @media (min-width: 800px){
   .contact__form--right{
@@ -632,7 +639,7 @@ html, body {
   padding: .5rem;
   margin: .5rem;
   width: 280px;
-  border: 1px solid #8F9F88;
+  border: 1px solid #99BCA6;
 }
 @media (min-width: 800px){
   .contact__form input, .contact__form textarea{
@@ -640,16 +647,16 @@ html, body {
   }
 }
 .contact__form textarea {
-  height: 130px;
+  height: 170px;
 }
 .contact__form input[type="submit"] {
-  background-color: #3D4A39;
+  background-color: #021C12;
   color: #fff;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .contact__form input[type="submit"]:hover {
-  background-color: #E2B6AA;
+  background-color: #99BCA6;
 }
 .generic-content-container {
     font-size: 1.2rem;
@@ -668,11 +675,11 @@ html, body {
   padding-left: .7rem;
 }
 .generic-content-container a {
-  color: #8F9F88;
+  color: #35623C;
   font-size: 1.3rem;
 }
 .generic-content-container a:hover {
-  color: #E2B6AA;
+  color: #99BCA6;
 }
 .generic-content-container p {
   margin: 0 0 1rem;
@@ -682,8 +689,8 @@ html, body {
     margin: 0 0 1.5rem;
   }
 }
-.generic-content-container--pink {
-  color: #E2B6AA;
+.generic-content-container--blue {
+  color: #3c3562;
   font-size: 1rem;
 }
 .generic-content-container img {

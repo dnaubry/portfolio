@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Danielle Aubry | Web Developer</title>
@@ -88,17 +88,21 @@
     </div>
     <div id="contact" class="page-section page-section--columns" data-matching-link="#contact-link">
       <h3 class="section-title">Contact</h3>
-      <p class="generic-content-container">Want to get in touch? Send me an email at <span class="generic-content-container--heading generic-content-container--pink">hello@danielleaubry.com</span> or use the form below.</p>
+      <p class="generic-content-container">Want to get in touch? Send me an email at <span class="generic-content-container--heading generic-content-container--blue">hello@danielleaubry.com</span> or use the form below.</p>
       <div class="contact__form">
         <form class="content__form" action="https://formspree.io/hello@danielleaubry.com"
         method="POST">
             <div class="contact__form--left">
-              <input type="text" name="name" id="input-name" placeholder="Name">
-              <input type="email" name="_replyto" id="input-email" placeholder="Email address">
-              <input type="text" name="_subject" id="input-subject" placeholder="Subject">
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="input-name">
+              <label for="_replyto">Email Address:</label>
+              <input type="email" name="_replyto" id="input-email">
+              <label for="_subject">Subject:</label>
+              <input type="text" name="_subject" id="input-subject">
             </div>
             <div class="contact__form--right">
-              <textarea name="message" text="text" id="input-message" placeholder="Message"></textarea>
+              <label for="message">Message:</label>
+              <textarea name="message" text="text" id="input-message"></textarea>
             </div>
           <input type="submit" value="Send" id="input-submit">
         </form>

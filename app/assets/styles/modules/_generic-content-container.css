@@ -16,11 +16,11 @@
     }
 
     a {
-       color: $lightGreen;
+       color: $mediumGreen;
        font-size: 1.3rem;
 
        &:hover {
-           color: $pink;
+           color: $lightGreen;
        } 
     }
 
@@ -32,8 +32,8 @@
         }
     }
 
-    &--pink {
-        color: $pink;
+    &--blue {
+        color: $blue;
         font-size: 1rem;
     }
 

@@ -1,5 +1,5 @@
 .section-title {
-    color: #8F9F88;
+    color: $mediumGreen;
     font-family: $accentFontFamily;
     font-size: 1.4rem;
     font-weight: 400;

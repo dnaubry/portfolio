@@ -9,7 +9,7 @@
     }
 
     &__title {
-        color: $pink;
+        color: $blue;
         font-family: $accentFontFamily;
         font-size: 2.3rem;
         font-weight: 400;
